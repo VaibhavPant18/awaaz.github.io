@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Speech Text Reader</title>
+</head>
+
+<body>
+  <div id="theme-toggler" class="fas fa-sun"></div>
+  <div class="container">
+    <h1>Awaaz</h1>
+
+    <!-- <button id="toggle" class="btn btn-toggle" style="font-size: xx-large">
+        🗣
+      </button> -->
+
+    <div class="buttons">
+      <button id="toggle" class="btn btn-toggle">Toggle Text 🗣</button>
+      <button id="Addtoggle" class="btn btn-Addtoggle">
+        Create Text Box </span>
+      </button>
+    </div>
+
+    <div id="text-box" class="text-box">
+      <div id="close" class="close"> <i class="fa-sharp fa-solid fa-circle-xmark"></i></div>
+      <h3>Choose Voice</h3>
+      <select id="voices"></select>
+      <textarea id="text" placeholder="Enter text to read..."></textarea>
+      <div class="out">
+        <button class="btn" id="read">Read Text</button>
+      </div>
+    </div>
+    <div id="add-text-box" class="add-text-box">
+      <div class="close1" id="close1">
+        <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+      </div>
+      <h3>Save Your Text</h3>
+      <label for="image">Choose a photo <span><i class="fa-solid fa-image"></i></span></label>
+      <input type="file" name="image" id="image" accept="image/*" />
+
+      <textarea id="text-1">Enter text to save...</textarea>
+      <div class="out">
+        <button class="btn" id="add">Save Text</button>
+      </div>
+    </div>
+    <main></main>
+    <!-- //hidden -->
+    <input type="text" id="upload1" />
+  </div>
+  <footer>
+    <p>copyright&copy;2022 designed by <span>vivant</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
